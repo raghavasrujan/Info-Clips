@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prime Number Checker</title>
+</head>
+
+<body>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" name="number">
+    <button onclick="findPrimes()">Find Primes</button>
+    <p id="result"></p>
+    <script>
+        function findPrimes() {
+            // Get the input value
+            const num = document.getElementById("number").value;
+            // Create an empty array to store prime numbers
+            const primes = [];
+            // Loop through all numbers up to the input value
+            for (let i = 2; i <= num; i++) {
+                let isPrime = true;
+                // Check if the number is prime
+                for (let j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                // If the number is prime, add it to the array
+                if (isPrime) {
+                    primes.push(i);
+                }
+            }
+            // Display the result
+            document.getElementById("result").innerHTML =
+                "Prime numbers up to " + num + ": " + primes.join(", ");
+        }
+    </script>
+</body>
+
+</html>

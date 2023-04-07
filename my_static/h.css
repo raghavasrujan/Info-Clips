@@ -1,0 +1,95 @@
+.fo {
+    margin-right: 50%;
+}
+
+input[type=text] {
+    margin: 10px;
+    margin-left: 0;
+    background-color: #444654;
+    color: #ececf1;
+}
+
+.sea {
+    margin: 30px;
+}
+
+#player {
+    float: right;
+    margin: 30px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+
+.para {
+    margin: 30px;
+    border: 2px slid black;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    /* padding-top : 10px; */
+}
+
+li {
+    margin: 5px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+#form3,
+#form4 {
+    padding-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #343541;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #10a37f;
+    border-color: #10a37f;
+}
+
+#tot-output {
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#output {
+    width: 50%;
+}
+
+#s-output {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
